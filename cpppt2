@@ -1,0 +1,196 @@
+
+
+
+
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+
+
+//functions
+//pointers
+//arrays
+//structs and classes
+
+
+
+
+
+/*
+
+
+//functions
+
+
+void greeting(std::string name)
+{
+    std::cout << "Hello " << name << "!" << std::endl;
+    return;
+}
+*/
+/*
+void whole_name(std::string first_name = "", std::string last_name = "")
+{
+    if(first_name == "" or last_name == "")
+    {
+        std::cout << "Wrong Input" << std::endl;
+    }
+    std::cout << first_name + " " + last_name << std::endl;
+
+
+}
+
+*/
+
+/*
+
+void swap_values(int *a, int *b)
+{
+    //before
+    std::cout << "Before swap: " << *a << " " << *b << std::endl;
+
+
+   
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+
+
+    //after
+    std::cout << "After swap: " << *a << " " << *b << std::endl;
+}
+
+*/
+
+/*
+
+int* find_address(int *a)
+{
+    return a;
+}
+
+*/
+
+
+
+
+
+///integer arrays
+//string arrays
+
+
+
+
+//int arr[4] = {1,2,3,4};
+
+
+
+
+
+
+
+struct user_struct
+{
+    public:
+    std::string name;
+    std::string password;
+ 
+    std::string getuserpass()
+    {
+        return name + " " + password;
+
+
+    }
+};
+
+
+class user_class
+{
+    public:
+        std::string name;
+        std::string password;
+
+
+        std::string getuserpass()
+        {
+            return name + " " + password;
+
+
+
+
+
+        }
+};
+
+
+
+
+int main()
+{
+
+    //int a = 5;
+    //std::cout << a << std::endl;//5
+    //std::cout << &a << std::endl; //memory address
+
+
+    //int* a_pointer = &a;
+
+
+    //std::cout << a_pointer << std::endl; //memory address
+    //std::cout << *a_pointer << std::endl; //value
+
+    //int a = 5;
+    //int b = 10;
+    //int *a_pointer = &a;
+    //int *b_pointer = &b;
+
+    //std::cout << a << std::endl;
+    //std::cout << b << std::endl;
+    
+    //swap_values(a_pointer, b_pointer);
+
+
+    //std::cout << a << std::endl;
+    //std::cout << b << std::endl;
+    //std::cout << find_address(a_pointer) << std::endl;
+
+
+    //greeting("Segfal");
+
+
+    //whole_name("Segfal","Mercer");
+
+
+
+    /**
+    for(int i=0;i<10;i++)
+    {
+        std::cout << arr[i] << std::endl;
+    }
+    **/
+
+
+   user_struct T;
+    T.name = "Segfal";
+    T.password = "123";
+    T.getuserpass();
+
+    std::cout << T.name << std::endl;
+    std::cout << T.password << std::endl;
+    std::cout << T.getuserpass() << std::endl;
+
+    user_class U;
+    U.name = "Mercer";
+    U.password = "456";
+    U.getuserpass();
+
+    std::cout << U.getuserpass() << std::endl;
+
+
+
+
+
+}
